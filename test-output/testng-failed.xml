@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Group of group Suite]">
+  <listeners>
+    <listener class-name="com.testNG.retryListener"/>
+  </listeners>
+  <test name="Group of group Test(failed)">
+    <groups>
+      <run>
+        <include name="include-group"/>
+        <exclude name="exclude-group"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.testNG.groupTest">
+        <methods>
+          <include name="testMethodTwo"/>
+        </methods>
+      </class> <!-- com.testNG.groupTest -->
+    </classes>
+  </test> <!-- Group of group Test(failed) -->
+</suite> <!-- Failed suite [Group of group Suite] -->
